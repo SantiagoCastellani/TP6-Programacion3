@@ -27,5 +27,23 @@ namespace TP6_GRUPO_5.Conexion
         {
             return ObtenerTabla("Productos", "SELECT IdProducto,NombreProducto,CantidadPorUnidad,PrecioUnidad FROM Productos");
         }
+
+        public bool EliminarProducto(int idProducto)
+        {
+            string consultaSQL = "DELETE FROM Productos WHERE IdProducto = @IdProducto";
+            Conexion conexion = new Conexion();
+            SqlConnection sqlConnection = conexion.ObtenerConexion();
+            SqlCommand sqlCommand = new SqlCommand(consultaSQL, sqlConnection);
+            sqlCommand.Parameters.AddWithValue("@IdProducto", idProducto);
+            try
+            {
+                sqlCommand.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }
