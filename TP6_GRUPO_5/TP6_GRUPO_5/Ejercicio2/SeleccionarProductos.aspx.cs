@@ -90,5 +90,16 @@ namespace TP6_GRUPO_5.Ejercicio2
 
             return dataTable;
         }
+
+        protected void gv_Productos_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            gv_Productos.PageIndex = e.NewPageIndex;
+            cargarProductos();
+        }
+
+        protected void LbtnVolverInicio_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Ejercicio2.aspx");
+        }
     }
 }

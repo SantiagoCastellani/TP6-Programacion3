@@ -16,6 +16,13 @@
         .auto-style3 {
             margin-left: 120px;
         }
+        .auto-style4 {
+            height: 30px;
+        }
+        .auto-style5 {
+            width: 82px;
+            height: 30px;
+        }
     </style>
 </head>
 <body>
@@ -34,18 +41,18 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td>
+                <td class="auto-style4"></td>
+                <td class="auto-style5"></td>
+                <td class="auto-style4">
                     <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Inicio"></asp:Label>
                 </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style4"></td>
+                <td class="auto-style4"></td>
+                <td class="auto-style4"></td>
+                <td class="auto-style4"></td>
+                <td class="auto-style4"></td>
+                <td class="auto-style4"></td>
+                <td class="auto-style4"></td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
