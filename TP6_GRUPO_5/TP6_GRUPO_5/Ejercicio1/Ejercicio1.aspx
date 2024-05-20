@@ -57,6 +57,13 @@
                 </Columns>
             </asp:GridView>
         </div>
+        <p class="auto-style1">
+            &nbsp;</p>
+        <p class="auto-style1">
+            &nbsp;</p>
+        <p class="auto-style1">
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Inicio.aspx">Volver al Menú</asp:HyperLink>
+        </p>
     </form>
 </body>
 </html>

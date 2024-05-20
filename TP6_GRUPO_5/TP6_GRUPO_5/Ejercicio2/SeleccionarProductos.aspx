@@ -16,11 +16,20 @@
         .auto-style3 {
             width: 312px;
         }
+        .auto-style4 {
+            width: 21px;
+            margin-left: 80px;
+        }
+        .auto-style5 {
+            margin-left: 80px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+        <div class="auto-style5">
+            <br />
+&nbsp;&nbsp;&nbsp;
             <asp:GridView ID="gv_Productos" runat="server" AllowPaging="True" AutoGenerateSelectButton="True" OnSelectedIndexChanging="gv_Productos_SelectedIndexChanging" PageSize="14">
             </asp:GridView>
         </div>
@@ -39,8 +48,9 @@
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
-                <td>
+                <td class="auto-style5">
                     <asp:Label ID="Label1" runat="server"></asp:Label>
+                    <br />
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -52,7 +62,7 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style2">&nbsp;</td>
+                <td class="auto-style4">&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -65,7 +75,9 @@
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Ejercicio2/MostrarProducto.aspx">Mostrar Productos Seleccionados</asp:HyperLink>
+                </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td class="auto-style3">&nbsp;</td>

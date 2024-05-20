@@ -13,6 +13,9 @@
         .auto-style2 {
             width: 82px;
         }
+        .auto-style3 {
+            margin-left: 120px;
+        }
     </style>
 </head>
 <body>
@@ -33,7 +36,9 @@
             <tr>
                 <td>&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Inicio"></asp:Label>
+                </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -45,8 +50,7 @@
             <tr>
                 <td>&nbsp;</td>
                 <td class="auto-style2">
-                    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="X-Large" Text="Inicio"></asp:Label>
-                </td>
+                    &nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -74,8 +78,34 @@
                 <td>&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td>
-                    <asp:LinkButton ID="lb_Mostrar" runat="server" Font-Bold="True">Eliminar Productos Seleccionados</asp:LinkButton>
+                    &nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="auto-style2"></td>
+                <td>
+                    <asp:HyperLink ID="hl_Mostrar" runat="server" Font-Bold="True" Font-Overline="False" Font-Underline="True" ForeColor="Blue" NavigateUrl="~/Ejercicio2/MostrarProducto.aspx">Mostrar Productos</asp:HyperLink>
+                    <br />
                 </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td class="auto-style2">&nbsp;</td>
+                <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -88,32 +118,8 @@
                 <td>&nbsp;</td>
                 <td class="auto-style2">&nbsp;</td>
                 <td>
-                    <asp:HyperLink ID="hl_Mostrar" runat="server" Font-Bold="True" Font-Overline="False" Font-Underline="True" ForeColor="Blue" NavigateUrl="~/Ejercicio2/MostrarProducto.aspx">Mostrar Productos</asp:HyperLink>
+                    <asp:LinkButton ID="lb_EliminarSeleccionados" runat="server" Font-Bold="True" OnClick="lb_EliminarSeleccionados_Click">Eliminar Productos Seleccionados</asp:LinkButton>
                 </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -147,6 +153,9 @@
                 <td>&nbsp;</td>
             </tr>
         </table>
+        <p class="auto-style3">
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Inicio.aspx">Volver al Menú</asp:HyperLink>
+        </p>
     </form>
 </body>
 </html>

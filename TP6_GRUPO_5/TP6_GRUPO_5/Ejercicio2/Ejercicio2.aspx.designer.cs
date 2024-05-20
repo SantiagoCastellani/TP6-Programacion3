@@ -42,15 +42,6 @@ namespace TP6_GRUPO_5.Ejercicio2
         protected global::System.Web.UI.WebControls.HyperLink hlSeleccionarProductos;
 
         /// <summary>
-        /// Control lb_Mostrar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lb_Mostrar;
-
-        /// <summary>
         /// Control hl_Mostrar.
         /// </summary>
         /// <remarks>
@@ -58,5 +49,23 @@ namespace TP6_GRUPO_5.Ejercicio2
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink hl_Mostrar;
+
+        /// <summary>
+        /// Control lb_EliminarSeleccionados.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lb_EliminarSeleccionados;
+
+        /// <summary>
+        /// Control HyperLink1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
     }
 }
