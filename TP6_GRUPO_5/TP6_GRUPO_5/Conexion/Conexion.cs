@@ -11,8 +11,8 @@ namespace TP6_GRUPO_5.Conexion
     {
         /// PROPERTIES
         //static string servidor = "localhost";
-        static string servidor = "AXEL";
-        string urlBD = @"Data Source="+servidor+@"\sqlexpress;Initial Catalog = Neptuno; Integrated Security = True";
+        static string servidor = "";
+        string urlBD = @"Data Source="+ servidor +@"\sqlexpress;Initial Catalog = Neptuno; Integrated Security = True";
 
         public Conexion()
         {

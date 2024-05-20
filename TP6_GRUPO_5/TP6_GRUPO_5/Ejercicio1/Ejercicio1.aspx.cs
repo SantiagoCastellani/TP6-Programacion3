@@ -42,5 +42,31 @@ namespace TP6_GRUPO_5
 
             CargarGrillaDeProdutos();
         }
+        protected void gvProductos_RowEditing1(object sender, GridViewEditEventArgs e)
+        {
+            gvProductos.EditIndex = e.NewEditIndex;
+            CargarGrillaDeProdutos();
+        }
+
+        protected void gvProductos_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
+        {
+            gvProductos.EditIndex = -1;
+            CargarGrillaDeProdutos();
+        }
+
+        protected void gvProductos_RowUpdating(object sender, GridViewUpdateEventArgs e)
+        {
+            string IdProducto = ((Label)gvProductos.Rows[e.RowIndex].FindControl("lbl_Eit_IdProducto")).Text;
+            string NombreProducto = ((TextBox)gvProductos.Rows[e.RowIndex].FindControl("txt_Eit_NombreProducto")).Text;
+            string CantidadPorUnidad = ((TextBox)gvProductos.Rows[e.RowIndex].FindControl("txt_Eit_CantidadPorUnidad")).Text;
+            string PrecioUnidad = ((TextBox)gvProductos.Rows[e.RowIndex].FindControl("txt_Eit_PecioUnidad")).Text;
+
+            GestionProductos gestionProductos = new GestionProductos();
+            gestionProductos.ModificarProducto(Convert.ToInt32(IdProducto), NombreProducto, CantidadPorUnidad, Convert.ToDecimal(PrecioUnidad));
+            gvProductos.EditIndex = -1;
+            CargarGrillaDeProdutos();
+        }
+
+
     }
 }
