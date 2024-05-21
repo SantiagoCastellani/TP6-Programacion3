@@ -12,7 +12,7 @@ namespace TP6_GRUPO_5
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Page.IsPostBack == false)
+            if (!IsPostBack)
             {
                 CargarGrillaDeProdutos();
             }
@@ -25,7 +25,7 @@ namespace TP6_GRUPO_5
             gvProductos.DataSource = productos.ObtenerProductos(); 
             gvProductos.DataBind();
         }
-
+        
         protected void gvProductos_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
             gvProductos.PageIndex = e.NewPageIndex;
