@@ -13,5 +13,11 @@ namespace TP6_GRUPO_5.Ejercicio2
         {
 
         }
+
+        protected void lb_EliminarSeleccionados_Click(object sender, EventArgs e)
+        {
+            Session["tabla"] = null;
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "alertScript", "alert('Los productos que estaba seleccionados, fueron eliminados.');", true);
+        }
     }
 }
