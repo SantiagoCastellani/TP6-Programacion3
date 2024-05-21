@@ -50,8 +50,12 @@ namespace TP6_GRUPO_5.Ejercicio2
                 {
                     Session["tabla"] = CrearTabla();
                 }
-                
-                cargarSeleccionado((DataTable)Session["tabla"],idProducto,nombreProducto,cantidad,precio);
+
+                if (!existeProducto((DataTable)Session["tabla"], idProducto))
+                {
+                    cargarSeleccionado((DataTable)Session["tabla"], idProducto, nombreProducto, cantidad, precio);
+                }
+               
                 
             }
             
@@ -100,6 +104,20 @@ namespace TP6_GRUPO_5.Ejercicio2
         protected void LbtnVolverInicio_Click(object sender, EventArgs e)
         {
             Response.Redirect("Ejercicio2.aspx");
+        }
+
+        private Boolean existeProducto(DataTable table,int idProducto)
+        {
+            Boolean existe = false;
+            foreach (DataRow fila in table.Rows)
+            {
+                int id = Convert.ToInt32(fila["IdProducto"]);
+                if (id==idProducto)
+                {
+                    existe = true;
+                }
+            }
+            return existe;
         }
     }
 }
