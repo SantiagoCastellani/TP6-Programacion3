@@ -30,7 +30,7 @@
         <div class="auto-style5">
             <br />
 &nbsp;&nbsp;&nbsp;
-            <asp:GridView ID="gv_Productos" runat="server" AllowPaging="True" AutoGenerateSelectButton="True" OnSelectedIndexChanging="gv_Productos_SelectedIndexChanging" PageSize="14">
+            <asp:GridView ID="gv_Productos" runat="server" AllowPaging="True" AutoGenerateSelectButton="True" OnSelectedIndexChanging="gv_Productos_SelectedIndexChanging" PageSize="14" OnPageIndexChanging="gv_Productos_PageIndexChanging">
             </asp:GridView>
         </div>
         <table class="auto-style1">
@@ -80,7 +80,9 @@
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
-                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style3">
+                    <asp:LinkButton ID="LbtnVolverInicio" runat="server" OnClick="LbtnVolverInicio_Click">volver a inicio</asp:LinkButton>
+                </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
